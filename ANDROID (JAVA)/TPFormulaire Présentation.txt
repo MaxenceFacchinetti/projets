@@ -1,0 +1,1 @@
+Projet testant les fonctionnalités d'Android Studio, ici nous avons un formulaire avec différents champs, une liste des "contacts", avec une possibilité de les modifier, etc.

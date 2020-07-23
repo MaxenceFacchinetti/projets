@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Vue.MainActivity">
+
+    <TextView
+        android:id="@+id/velovProjectTextViewMain"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        android:text="Velov Project"
+        android:textColor="#B6B6B6"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonListeStationMain"
+        android:layout_width="267dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="80dp"
+        android:onClick="clickButtonListeStationMain"
+        android:text="Liste des stations"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/velovProjectTextViewMain" />
+
+    <Button
+        android:id="@+id/buttonGoogleMapMain"
+        android:layout_width="267dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickButtonGoogleMapMain"
+        android:text="Google Map"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListeStationMain" />
+</androidx.constraintlayout.widget.ConstraintLayout>

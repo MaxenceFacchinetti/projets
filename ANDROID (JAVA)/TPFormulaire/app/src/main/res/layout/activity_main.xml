@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutItemList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04312C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titreGenCashflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Générateur de cashflow"
+        android:textColor="#CCFFF9"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCashflow" />
+
+    <ImageView
+        android:id="@+id/imageCashflow"
+        android:layout_width="370dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cashflow"
+        tools:srcCompat="@drawable/cashflow" />
+
+    <Button
+        android:id="@+id/buttonListeContacts"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#0B6147"
+        android:onClick="clickButtonListeContacts"
+        android:text="Liste des contacts"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreGenCashflow" />
+
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="#0B6147"
+        android:onClick="clickButtonAddContact"
+        android:text="Ajouter un contact"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListeContacts" />
+</androidx.constraintlayout.widget.ConstraintLayout>

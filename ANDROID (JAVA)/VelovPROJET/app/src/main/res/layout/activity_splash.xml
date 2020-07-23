@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSplashScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/VelovProjectTextViewSplashScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:text="Velov Project"
+        android:textColor="#B6B6B6"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextViewSplashScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAR MAXENCE FACCHINETTI"
+        android:textColor="#B6B6B6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/VelovProjectTextViewSplashScreen"
+        app:layout_constraintStart_toStartOf="@+id/VelovProjectTextViewSplashScreen"
+        app:layout_constraintTop_toBottomOf="@+id/VelovProjectTextViewSplashScreen" />
+</androidx.constraintlayout.widget.ConstraintLayout>

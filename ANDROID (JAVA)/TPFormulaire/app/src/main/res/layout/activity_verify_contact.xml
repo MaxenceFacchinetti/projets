@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutItemList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C363F"
+    tools:context=".VerifyContactActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/avatarContact"
+                android:layout_width="192dp"
+                android:layout_height="176dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/sexeTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEXE"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatarContact" />
+
+            <TextView
+                android:id="@+id/nomTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Nom : nom"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sexeTextViewVerify" />
+
+            <TextView
+                android:id="@+id/prenomTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Prénom : prénom"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomTextViewVerify" />
+
+            <TextView
+                android:id="@+id/dateNaissanceTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Date de naissance : 00/00/00"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenomTextViewVerify" />
+
+            <TextView
+                android:id="@+id/numTelTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Tel : 00.00.00.00.00"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateNaissanceTextViewVerify" />
+
+            <TextView
+                android:id="@+id/mailTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Mail : exemple@domaine.fr"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numTelTextViewVerify" />
+
+            <TextView
+                android:id="@+id/codePostalTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Code postal : 01000"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mailTextViewVerify" />
+
+            <TextView
+                android:id="@+id/adresseTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Adresse :"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/codePostalTextViewVerify" />
+
+            <TextView
+                android:id="@+id/adresseValueTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="XX rue Peter Fink"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresseTextViewVerify" />
+
+            <Button
+                android:id="@+id/annulerButtonVerify"
+                android:layout_width="162dp"
+                android:layout_height="53dp"
+                android:layout_marginEnd="32dp"
+                android:background="#0B6147"
+                android:onClick="clickAnnulerButton"
+                android:text="Annuler"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ajouterButtonVerify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ajouterButtonVerify" />
+
+            <Button
+                android:id="@+id/ajouterButtonVerify"
+                android:layout_width="162dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="#0B6147"
+                android:onClick="clickAjouterButton"
+                android:text="Ajouter"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresseValueTextViewVerify" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

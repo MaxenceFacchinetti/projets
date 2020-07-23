@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutItemList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04312C" >
+
+    <TextView
+        android:id="@+id/titreListeContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Liste des contacts"
+        android:textColor="#CCFFF9"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCashflow" />
+
+    <Button
+        android:id="@+id/ajouterButton"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#0B6147"
+        android:onClick="ajouterButtonClick"
+        android:text="Ajouter"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewContact" />
+
+    <Button
+        android:id="@+id/annulerButton"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#0B6147"
+        android:onClick="annulerButtonClick"
+        android:text="Annuler"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewContact" />
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="0dp"
+        android:layout_height="422dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreListeContact">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

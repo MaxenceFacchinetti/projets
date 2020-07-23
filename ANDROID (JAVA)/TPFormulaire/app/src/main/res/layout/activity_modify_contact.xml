@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C363F"
+    tools:context=".AddContactActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#04312C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titreAjouterContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter un contact"
+                android:textColor="#CCFFF9"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/sexeGroupeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatarContact">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femme"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonHomme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Homme"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/sexeObligatoire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:textColor="#FDB8B8"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/sexeGroupeRadioButton"
+                app:layout_constraintStart_toEndOf="@+id/sexeGroupeRadioButton"
+                app:layout_constraintTop_toTopOf="@+id/sexeGroupeRadioButton" />
+
+            <TextView
+                android:id="@+id/nomTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sexeGroupeRadioButton" />
+
+            <TextView
+                android:id="@+id/nomObligatoire"
+                android:layout_width="9dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:textColor="#FDB8B8"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/nomTextViewVerify"
+                app:layout_constraintStart_toEndOf="@+id/nomTextViewVerify"
+                app:layout_constraintTop_toTopOf="@+id/nomTextViewVerify" />
+
+            <EditText
+                android:id="@+id/nomEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nom"
+                android:textColor="#BCD1CB"
+                android:textColorHint="#00EC1414"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomObligatoire" />
+
+            <TextView
+                android:id="@+id/prenomObligatoire"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:textColor="#FDB8B8"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/prenomTextViewVerify"
+                app:layout_constraintStart_toEndOf="@+id/prenomTextViewVerify"
+                app:layout_constraintTop_toTopOf="@+id/prenomTextViewVerify" />
+
+            <TextView
+                android:id="@+id/prenomTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Prénom"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomEditText" />
+
+            <EditText
+                android:id="@+id/prenomEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Prénom"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenomObligatoire" />
+
+            <TextView
+                android:id="@+id/dateNaissanceTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenomEditText" />
+
+            <EditText
+                android:id="@+id/dateNaissanceEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="01/01/2000"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateNaissanceTextViewVerify" />
+
+            <TextView
+                android:id="@+id/numTelTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numéro de téléphone"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateNaissanceEditText" />
+
+            <TextView
+                android:id="@+id/numTelObligatoire"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:textColor="#FDB8B8"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numTelTextViewVerify"
+                app:layout_constraintStart_toEndOf="@+id/numTelTextViewVerify"
+                app:layout_constraintTop_toTopOf="@+id/numTelTextViewVerify" />
+
+            <EditText
+                android:id="@+id/numTelEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0123456789"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numTelObligatoire" />
+
+            <TextView
+                android:id="@+id/mailTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse Mail"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numTelEditText" />
+
+            <EditText
+                android:id="@+id/mailEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="exemple@domaine.fr"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mailTextViewVerify" />
+
+            <TextView
+                android:id="@+id/codePostalTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code postal"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mailEditText" />
+
+            <EditText
+                android:id="@+id/codePostalEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="01000"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/codePostalTextViewVerify" />
+
+            <TextView
+                android:id="@+id/adresseTextViewVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/codePostalEditText" />
+
+            <EditText
+                android:id="@+id/adresseEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Adresse"
+                android:textColor="#BCD1CB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresseTextViewVerify" />
+
+            <ImageView
+                android:id="@+id/avatarContact"
+                android:layout_width="229dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="8dp"
+                android:onClick="avatarClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titreAjouterContact"
+                app:srcCompat="@drawable/logo1"
+                tools:src="@tools:sample/avatars[0]"
+                tools:srcCompat="@drawable/logo1" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="#0B6147"
+                android:onClick="modifyButtonClick"
+                android:text="Modifier"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresseEditText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

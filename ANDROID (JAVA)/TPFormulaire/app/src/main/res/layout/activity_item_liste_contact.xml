@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutItemList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#04312C"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatarContactListContact"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/nomTextViewItemListContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="NOM"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/avatarContactListContact"
+        app:layout_constraintTop_toTopOf="@+id/avatarContactListContact" />
+
+    <TextView
+        android:id="@+id/prenomTextViewItemListContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="PRENOM"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarContactListContact"
+        app:layout_constraintStart_toEndOf="@+id/avatarContactListContact" />
+
+    <TextView
+        android:id="@+id/cashflowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Taux de cashflow :"
+        android:textColor="#6DDFAD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addCashflowButton"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:background="#2D9757"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cashflowTextView"
+        app:layout_constraintStart_toStartOf="@+id/cashflowTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cashflowTextView" />
+
+    <Button
+        android:id="@+id/removeCashflowButton"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:background="#972D2D"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cashflowTextView"
+        app:layout_constraintStart_toStartOf="@+id/cashflowTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addCashflowButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

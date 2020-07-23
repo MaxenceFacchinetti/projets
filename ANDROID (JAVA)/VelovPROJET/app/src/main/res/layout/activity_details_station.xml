@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutDetailsStation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/scrollViewDetailsStation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutScrollViewDetailsStation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonRetourDetailsStation"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="clickButtonRetourDetailsStation"
+                android:text="RETOUR"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFavDetailsStation"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewFavDetailsStation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFavDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewNumberDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="numberStation"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFavDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewNameDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="nameStation"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNumberDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewContractNameDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Contract Name : contractName"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewAdresseDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Adresse : address"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewContractNameDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewBankingDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Banking : ✓"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAdresseDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewBonusDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Bonus : ✓"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBankingDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewBikeStandsDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Nombre de stands : nb"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBonusDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewAvailableBikeStandsDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Stands disponibles : nb"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBikeStandsDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewAvailableBikesDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Vélos disponibles : nb"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAvailableBikeStandsDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewStatusDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Status :"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAvailableBikesDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewFermeOuvertDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="O ou F"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/textViewStatusDetailsStation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAvailableBikesDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewLastUpdateDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Last Update :"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewStatusDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewPositionDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Position :"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLastUpdateDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewLATDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="LAT :"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPositionDetailsStation" />
+
+            <TextView
+                android:id="@+id/textViewLNGDetailsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="LNG :"
+                android:textColor="#B6B6B6"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLATDetailsStation" />
+
+            <ImageView
+                android:id="@+id/imageViewFavDetailsStation"
+                android:layout_width="93dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="clickImageViewFavDetailsStation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
