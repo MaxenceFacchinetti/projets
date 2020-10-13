@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "TPAndroid2_1"
